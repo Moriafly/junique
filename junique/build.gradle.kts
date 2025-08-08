@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.Moriafly"
-version = "2.0.0-dev01"
+version = "2.0.0-alpha01"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
@@ -19,6 +19,7 @@ kotlin {
 }
 
 dependencies {
+    implementation(libs.jetbrains.kotlinx.serialization.json)
     testImplementation(libs.kotlin.test)
 }
 
